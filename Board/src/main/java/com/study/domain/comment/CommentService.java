@@ -3,10 +3,11 @@ package com.study.domain.comment;
 import com.study.common.paging.Pagination;
 import com.study.common.paging.PagingResponse;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.engine.internal.Collections;
+
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.Collections;
 import java.util.List;
 
 @Service
