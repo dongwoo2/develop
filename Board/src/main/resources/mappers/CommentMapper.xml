@@ -14,6 +14,7 @@
         , modified_date
     </sql>
 
+
     <!-- 댓글 저장 -->
     <insert id="save" parameterType="com.study.domain.comment.CommentRequest" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO tb_comment (
@@ -77,6 +78,7 @@
         LIMIT #{pagination.limitStart}, #{recordSize}
     </select>
 
+
     <!-- 댓글 수 카운팅 -->
     <select id="count" parameterType="com.study.domain.comment.CommentSearchDto" resultType="int">
         SELECT
@@ -87,4 +89,5 @@
             delete_yn = 0
           AND post_id = #{postId}
     </select>
+
 </mapper>

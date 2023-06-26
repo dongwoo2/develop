@@ -1,5 +1,5 @@
 package com.study.domain.comment;
-///다음은 DB와의 통신 역할을 할 Mapper 인터페이스입니다.
+
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -34,14 +34,14 @@ public interface CommentMapper {
 
     /**
      * 댓글 리스트 조회
-     * @param postId - 게시글 번호 (FK)
+     * @param params - search conditions
      * @return 댓글 리스트
      */
     List<CommentResponse> findAll(CommentSearchDto params);
 
     /**
      * 댓글 수 카운팅
-     * @param postId - 게시글 번호 (FK)
+     * @param params - search conditions
      * @return 댓글 수
      */
     int count(CommentSearchDto params);
