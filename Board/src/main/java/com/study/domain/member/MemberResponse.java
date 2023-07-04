@@ -21,4 +21,5 @@ public class MemberResponse {
     public void clearPassword() {
         this.password = "";
     }
+
 }

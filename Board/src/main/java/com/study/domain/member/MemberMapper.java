@@ -1,5 +1,8 @@
 package com.study.domain.member;
 
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
 public interface MemberMapper {
 
     /**
@@ -33,4 +36,5 @@ public interface MemberMapper {
      * @return 회원 수
      */
     int countByLoginId(String loginId);
+
 }

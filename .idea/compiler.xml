@@ -12,10 +12,5 @@
         <module name="Board.Board.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="com.study.Board" target="11" />
-      <module name="com.study.Board.main" target="11" />
-      <module name="com.study.Board.test" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -10,6 +10,7 @@ public interface PostMapper {
 
     /**
      * 게시글 저장
+     *
      * @param params - 게시글 정보
      */
     void save(PostRequest params);
@@ -24,27 +25,30 @@ public interface PostMapper {
 
     /**
      * 게시글 수정
+     *
      * @param params - 게시글 정보
      */
     void update(PostRequest params);
 
     /**
      * 게시글 삭제
+     *
      * @param id - PK
      */
     void deleteById(Long id);
 
     /**
      * 게시글 리스트 조회
+     *
      * @return 게시글 리스트
      */
-    List<PostResponse> findAll(SearchDto params); //SearchDto 타입의 객체를 파라미터로 전달받도록 설정
+    List<PostResponse> findAll(SearchDto params);
 
     /**
      * 게시글 수 카운팅
+     *
      * @return 게시글 수
      */
-     int count(SearchDto params);
-
+    int count(SearchDto params);
 
 }
